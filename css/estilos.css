@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;600;700&display=swap");
+/* line 1, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#body {
+  font-family: "KoHo", sans-serif;
+  display: grid;
+  grid-template-areas: "head head head" ". bann ." ". prod ." ". produ ." "foot foot foot";
+  width: 100%;
+  align-items: stretch;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 120px 100% 1fr 1fr 120px;
+}
+
+/* line 46, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#body .whatsapp .whats_a .whats_img {
+  width: 70px;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  transition: all 500ms ease-in-out;
+}
+
+/* line 52, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#body .whatsapp .whats_a .whats_img:hover {
+  transform: rotate(45deg);
+}
+
+/* line 60, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#body .nav {
+  grid-area: foot;
+  padding-top: 50px;
+  margin-top: 15px;
+  background: linear-gradient(#b785d2a8, #194f4b);
+  background-color: black;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/* line 72, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#body .nav .nav-link {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#bodyProdu {
+  font-family: "KoHo", sans-serif;
+  display: grid;
+  grid-template-areas: "head head head" ". bann ." ". prod ." "foot foot foot";
+  width: 100%;
+  align-items: stretch;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 120px 100% 1fr 120px;
+}
+
+/* line 33, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#bodyProdu .productos {
+  grid-area: prod;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* line 38, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#bodyProdu .productos .productos_a {
+  padding: 0px 5px;
+  text-decoration: none;
+  color: black;
+}
+
+/* line 42, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#bodyProdu .productos .productos_a .productos_img {
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* line 46, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#bodyProdu .productos .productos_a .productos_p {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 15px;
+  padding: 0px 5px;
+}
+
+/* line 60, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#bodyProdu .nav {
+  grid-area: foot;
+  padding-top: 50px;
+  margin-top: 15px;
+  background: linear-gradient(#b785d2a8, #194f4b);
+  background-color: black;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/* line 72, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#bodyProdu .nav .nav-link {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* line 80, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#bodyProdu .articulos {
+  grid-area: prod;
+  display: flex;
+}
+
+/* line 83, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#bodyProdu .articulos article {
+  padding: 0px 5px;
+}
+
+/* line 85, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#bodyProdu .articulos article .articulos_img {
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* line 89, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#bodyProdu .articulos article .articulos_p {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* line 92, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#bodyProdu .articulos article:hover {
+  transform: translate(10px, 20px);
+  transform: scale(1.3);
+}
+
+/* line 46, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#bodyProdu .whatsapp .whats_a .whats_img {
+  width: 70px;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  transition: all 500ms ease-in-out;
+}
+
+/* line 52, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#bodyProdu .whatsapp .whats_a .whats_img:hover {
+  transform: rotate(45deg);
+}
+
+@media all and (max-width: 1024px) {
+  /* line 58, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+  .whatsapp {
+    display: none;
+  }
+}
+
+/* line 62, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#header {
+  font-family: "KoHo", sans-serif;
+  grid-area: head;
+  display: flex;
+  position: fixed;
+  min-height: 120px;
+  background: linear-gradient(#194f4b, #b785d2);
+  border-bottom: 2px solid black;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#header .botonera {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+/* line 25, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#header .botonera .botonera_menu li {
+  position: relative;
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+/* line 29, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#header .botonera .botonera_menu li a {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_mixins.scss */
+#header .botonera .botonera_menu li .botonera_hover {
+  display: none;
+  position: relative;
+  background: linear-gradient(#b785d2a8, #194f4b);
+}
+
+/* line 66, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#banner {
+  grid-area: bann;
+  background-image: url(../media/fotofondo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 120px;
+}
+
+/* line 75, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#carouselExampleFade {
+  grid-area: bann;
+}
+
+/* line 78, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#seccionUno {
+  font-family: "KoHo", sans-serif;
+  grid-area: prod;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 86, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#seccionUno .secuno_iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 90, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#seccionUno .secuno_p {
+  font-size: 40px;
+  font-weight: 700;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 960px) {
+  /* line 98, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+  #seccionUno {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 102, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+  #seccionUno iframe {
+    height: 70%;
+    width: 50%;
+  }
+  /* line 106, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+  #seccionUno p {
+    font-size: 40px;
+    height: 50%;
+    width: 50%;
+  }
+}
+
+/* line 112, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#seccionDos {
+  font-family: "KoHo", sans-serif;
+  grid-area: produ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* line 120, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#seccionDos .secdos_P {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+/* line 123, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#seccionDos .secdos_span {
+  font-weight: bold;
+}
+
+/* line 126, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#seccionDos .secdos_img {
+  height: 50%;
+  width: 50%;
+  display: inline-block;
+}
+
+@media all and (max-width: 960px) {
+  /* line 133, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+  #seccionDos {
+    display: flex;
+    flex-direction: row;
+  }
+  /* line 137, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+  #seccionDos img {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  /* line 143, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+  #seccionDos p {
+    height: auto;
+    font-size: 15px;
+  }
+}
+
+/* line 148, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#contacto {
+  font-family: "KoHo", sans-serif;
+  grid-area: prod;
+  margin-top: 15px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+/* line 155, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#contacto .contacto_form {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* line 157, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#contacto .contacto_form .contacto_input {
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* line 162, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#contacto .contacto_text {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  border-color: grey;
+  resize: none;
+}
+
+/* line 168, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#contacto .contacto_label {
+  display: block;
+  font-size: 25px;
+}
+
+/* line 172, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#contacto .contacto_p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* line 175, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#contacto .contacto_select {
+  font-size: 20px;
+}
+
+/* line 179, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#contacto .orden label {
+  display: inline-block;
+  font-size: 25px;
+}
+
+/* line 185, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#contacto .enviar input {
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* line 191, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#mapa {
+  grid-area: produ;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 195, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/FULL STACK/Copia de proyectofinal 2/scss/_main.scss */
+#mapa p {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=estilos.css.map */
