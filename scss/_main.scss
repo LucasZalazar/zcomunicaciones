@@ -224,3 +224,17 @@
 		width: 100%;
 	}
 }
+#servTec{
+	font-family:$fuente;
+	grid-area:prod;
+	margin-top: 15px;
+	display:flex;
+	align-items:center;
+	flex-direction: column;
+	form{
+		width: 100%;
+		input{
+			font-size: 25px;
+		}
+	}
+}

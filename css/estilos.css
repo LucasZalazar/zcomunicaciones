@@ -432,4 +432,24 @@
   }
 }
 
+/* line 227, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+#servTec {
+  font-family: "KoHo", sans-serif;
+  grid-area: prod;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 234, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+#servTec form {
+  width: 100%;
+}
+
+/* line 236, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+#servTec form input {
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=estilos.css.map */
