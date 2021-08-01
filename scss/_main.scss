@@ -1,4 +1,4 @@
-*{
+	*{
 	margin: 0;
 	padding: 0;
 }
@@ -45,6 +45,7 @@
 			.productos_img{
 				margin-top: 15px;
 				width: 100%;
+				object-fit:fill;
 			}
 			.productos_p{
 				@include fuentes (40px ,$fuente-bold);
@@ -57,6 +58,15 @@
 	@include articulos;
 	@include whatsapp;
 }
+@media all and (max-width: 960px){
+	#bodyProdu
+	.productos{
+		flex-direction:column;
+	}
+	.articulos{
+		flex-direction:column;
+	}
+}
 @media all and (max-width: 1024px){
 	.whatsapp{
 		display:none;
@@ -68,7 +78,7 @@
 }
 #banner{
 	grid-area: bann;
-	background-image: url(../media/fotofondo.jpg);
+	background-image: url(../media/fullsize/fotofondo.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -106,10 +116,11 @@
 		height: 70%;
 		width: 50%;
 	}
-	#seccionUno p{
-		font-size: 40px;
+	#seccionUno 
+	.secuno_p{
+		font-size: 20px;
 		height: 50%;
-		width: 50%;
+		width: 100%;
 	}
 }
 #seccionDos{
@@ -142,10 +153,12 @@
 		flex-direction: column;
 		height: auto;
 		width: auto;
+		object-fit: fill;
 	}
-	#seccionDos p{
+	#seccionDos
+	.secdos_p{
 		height: auto;
-		font-size:15px;
+		font-size:12px;
 	}
 }
 #contacto{
@@ -153,7 +166,7 @@
 	grid-area:prod;
 	margin-top: 15px;
 	display:flex;
-	align-items:start;
+	align-items:center;
 	flex-direction: column;
 	.contacto_form{
 		@include fuentes (15px ,$fuente-semibold);
@@ -197,5 +210,13 @@
 	flex-direction: row;
 	p{
 		@include fuentes (40px ,$fuente-medium);
+	}
+}
+@media all and (max-width: 520px){
+	#mapa{
+		flex-direction: column;
+	}
+	iframe{
+		width: 100%;
 	}
 }
