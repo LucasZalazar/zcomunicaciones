@@ -231,10 +231,13 @@
 	display:flex;
 	align-items:center;
 	flex-direction: column;
+	label{
+		@include fuentes (20px ,$fuente-bold);
+	}
 	form{
 		width: 100%;
 		input{
-			font-size: 25px;
+		@include fuentes (25px ,$fuente-medium);
 		}
 	}
 }

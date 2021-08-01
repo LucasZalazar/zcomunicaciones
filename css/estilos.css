@@ -443,13 +443,20 @@
 }
 
 /* line 234, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+#servTec label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* line 237, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #servTec form {
   width: 100%;
 }
 
-/* line 236, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 239, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #servTec form input {
   font-size: 25px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=estilos.css.map */
