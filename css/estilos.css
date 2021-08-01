@@ -402,25 +402,31 @@
   font-size: 20px;
 }
 
-/* line 207, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 206, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+#contacto .btn-primary {
+  background-color: #802b80;
+  border-color: #802b80;
+}
+
+/* line 211, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #mapa {
   grid-area: produ;
   display: flex;
   flex-direction: row;
 }
 
-/* line 211, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 215, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #mapa p {
   font-size: 40px;
   font-weight: 500;
 }
 
 @media all and (max-width: 520px) {
-  /* line 216, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+  /* line 220, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
   #mapa {
     flex-direction: column;
   }
-  /* line 219, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+  /* line 223, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
   iframe {
     width: 100%;
   }
