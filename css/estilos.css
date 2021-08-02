@@ -17,7 +17,7 @@
   grid-template-rows: 120px 100% 1fr 1fr 120px;
 }
 
-/* line 46, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 41, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #body .whatsapp .whats_a .whats_img {
   width: 70px;
   position: fixed;
@@ -26,12 +26,12 @@
   transition: all 500ms ease-in-out;
 }
 
-/* line 52, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 47, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #body .whatsapp .whats_a .whats_img:hover {
   transform: rotate(45deg);
 }
 
-/* line 60, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 55, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #body .nav {
   grid-area: foot;
   padding-top: 50px;
@@ -46,7 +46,7 @@
   list-style: none;
 }
 
-/* line 72, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 67, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #body .nav .nav-link {
   color: white;
   font-size: 20px;
@@ -100,7 +100,7 @@
   padding: 0px 5px;
 }
 
-/* line 60, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 55, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #bodyProdu .nav {
   grid-area: foot;
   padding-top: 50px;
@@ -115,7 +115,7 @@
   list-style: none;
 }
 
-/* line 72, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 67, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #bodyProdu .nav .nav-link {
   color: white;
   font-size: 20px;
@@ -123,36 +123,46 @@
   text-decoration: none;
 }
 
-/* line 80, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 75, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #bodyProdu .articulos {
   grid-area: prod;
   display: flex;
 }
 
-/* line 83, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 78, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #bodyProdu .articulos article {
   padding: 0px 5px;
 }
 
-/* line 85, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 80, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #bodyProdu .articulos article .articulos_img {
   margin-top: 15px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
-/* line 89, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 86, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #bodyProdu .articulos article .articulos_p {
   font-size: 30px;
   font-weight: 600;
 }
 
-/* line 92, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 89, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #bodyProdu .articulos article:hover {
   transform: translate(10px, 20px);
   transform: scale(1.3);
+  position: relative;
+  z-index: 2;
+  background-color: black;
 }
 
-/* line 46, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 95, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+#bodyProdu .articulos article:hover p {
+  color: white;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #bodyProdu .whatsapp .whats_a .whats_img {
   width: 70px;
   position: fixed;
@@ -161,7 +171,7 @@
   transition: all 500ms ease-in-out;
 }
 
-/* line 52, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
+/* line 47, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
 #bodyProdu .whatsapp .whats_a .whats_img:hover {
   transform: rotate(45deg);
 }
@@ -223,13 +233,6 @@
   color: black;
 }
 
-/* line 34, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_mixins.scss */
-#header .botonera .botonera_menu li .botonera_hover {
-  display: none;
-  position: relative;
-  background: linear-gradient(#b785d2a8, #194f4b);
-}
-
 /* line 80, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #banner {
   grid-area: bann;
@@ -241,12 +244,30 @@
   padding-top: 120px;
 }
 
-/* line 89, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
-#carouselExampleFade {
+@media all and (max-width: 1024px) {
+  /* line 90, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+  #banner {
+    grid-area: bann;
+    background-image: url(../media/mobile/fotofondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 120px;
+  }
+}
+
+/* line 100, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+#carouselExampleCaptions {
   grid-area: bann;
 }
 
-/* line 92, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 102, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+#carouselExampleCaptions h5 {
+  color: #ea0eea;
+}
+
+/* line 106, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #seccionUno {
   font-family: "KoHo", sans-serif;
   grid-area: prod;
@@ -258,15 +279,15 @@
   padding-top: 10px;
 }
 
-/* line 101, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 115, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #seccionUno .secuno_iframe {
   width: 100%;
   height: 100%;
 }
 
-/* line 105, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 119, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #seccionUno .secuno_p {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
   width: 100%;
   height: 50%;
@@ -274,17 +295,17 @@
 }
 
 @media only screen and (max-width: 960px) {
-  /* line 113, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+  /* line 127, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
   #seccionUno {
     display: flex;
     flex-direction: column;
   }
-  /* line 117, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+  /* line 131, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
   #seccionUno iframe {
     height: 70%;
     width: 50%;
   }
-  /* line 121, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+  /* line 135, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
   #seccionUno
 .secuno_p {
     font-size: 25px;
@@ -293,7 +314,7 @@
   }
 }
 
-/* line 128, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 142, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #seccionDos {
   font-family: "KoHo", sans-serif;
   grid-area: produ;
@@ -305,31 +326,32 @@
   padding-top: 10px;
 }
 
-/* line 137, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 151, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #seccionDos .secdos_P {
   font-size: 2rem;
   font-weight: 500;
 }
 
-/* line 140, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 154, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #seccionDos .secdos_span {
   font-weight: bold;
 }
 
-/* line 143, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 157, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #seccionDos .secdos_img {
   height: 50%;
   width: 50%;
   display: inline-block;
+  object-fit: cover;
 }
 
 @media all and (max-width: 960px) {
-  /* line 150, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+  /* line 165, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
   #seccionDos {
     display: flex;
     flex-direction: row;
   }
-  /* line 154, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+  /* line 169, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
   #seccionDos img {
     display: flex;
     flex-direction: column;
@@ -337,7 +359,7 @@
     width: auto;
     object-fit: fill;
   }
-  /* line 161, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+  /* line 176, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
   #seccionDos
 .secdos_p {
     height: auto;
@@ -345,7 +367,7 @@
   }
 }
 
-/* line 167, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 182, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #contacto {
   font-family: "KoHo", sans-serif;
   grid-area: prod;
@@ -355,19 +377,19 @@
   flex-direction: column;
 }
 
-/* line 174, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 189, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #contacto .contacto_form {
   font-size: 15px;
   font-weight: 600;
 }
 
-/* line 176, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 191, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #contacto .contacto_form .contacto_input {
   display: inline-block;
   font-size: 20px;
 }
 
-/* line 181, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 196, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #contacto .contacto_text {
   font-size: 20px;
   font-weight: 400;
@@ -376,66 +398,66 @@
   resize: none;
 }
 
-/* line 187, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 202, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #contacto .contacto_label {
   display: block;
   font-size: 25px;
 }
 
-/* line 191, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 206, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #contacto .contacto_p {
   font-size: 25px;
   font-weight: 600;
 }
 
-/* line 194, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 209, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #contacto .contacto_select {
   font-size: 20px;
 }
 
-/* line 198, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 213, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #contacto .orden label {
   display: inline-block;
   font-size: 25px;
 }
 
-/* line 204, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 219, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #contacto .enviar input {
   display: inline-block;
   font-size: 20px;
 }
 
-/* line 209, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 224, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #contacto .btn-primary {
   background-color: #802b80;
   border-color: #802b80;
 }
 
-/* line 214, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 229, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #mapa {
   grid-area: produ;
   display: flex;
   flex-direction: row;
 }
 
-/* line 218, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 233, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #mapa p {
   font-size: 40px;
   font-weight: 500;
 }
 
 @media all and (max-width: 520px) {
-  /* line 223, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+  /* line 238, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
   #mapa {
     flex-direction: column;
   }
-  /* line 226, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+  /* line 241, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
   iframe {
     width: 100%;
   }
 }
 
-/* line 230, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 245, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #servTec {
   font-family: "KoHo", sans-serif;
   grid-area: prod;
@@ -445,13 +467,13 @@
   flex-direction: column;
 }
 
-/* line 237, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 252, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #servTec label {
   font-size: 20px;
   font-weight: 700;
 }
 
-/* line 241, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
+/* line 256, ../../../../../../../../../../../../../Users/lucaszalazar/Desktop/copia git/scss/_main.scss */
 #servTec form input {
   font-size: 25px;
   font-weight: 500;

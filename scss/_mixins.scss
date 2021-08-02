@@ -26,17 +26,12 @@
 			position: relative;
 			display: inline-block;
 			padding: 0px 10px;
-			a{
-			  @include fuentes (30px ,$fuente-bold);
-			  text-decoration: none;
-			  color: black;
-			}
-			.botonera_hover{
-				display: none;
-				position: relative;
-				background:linear-gradient(#b785d2a8,#194f4b);
+				a{
+				  @include fuentes (30px ,$fuente-bold);
+				  text-decoration: none;
+				  color: black;
 				}
-			}
+		   }
 		}
 	}
 }
@@ -85,6 +80,8 @@
 		.articulos_img{
 			margin-top: 15px;
 			width: 100%;
+			position:relative;
+			z-index:1;
 		}
 		.articulos_p{
 			@include fuentes (30px ,$fuente-semibold);
@@ -92,6 +89,12 @@
 		&:hover{
 			transform: translate(10px, 20px);
 			transform: scale(1.3);
+			position:relative;
+			z-index:2;
+			background-color: black;
+			p{
+				color:white;
+			}
 		}
 	}
   }
